@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CALCULATOR</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body bgcolor="pink" align="centre" width="60%">
+        <table align="centre" width="70%">
+            <tr>
+                <th><h1 style="color:darkblue">CALCULATOR</h1></th>
+            </tr>
+        </table>
+        <form name="calculator">
+            Number 1: <input type="text" name="txtnum1">
+            <br>
+            Number 2: <input type="text" name="txtnum2">
+            <br>
+            Operator: <input type="button" style="background-color:aqua" value="+" onclick="sumValues()">
+            <input type="button" value="-" onclick="subtractValues()" style="background-color:rgb(255, 0, 85)">
+            <input type="button" value="x" onclick="multiplyValues()" style="background-color:fuchsia">
+            <input type="button" value="/" onclick="divideValues()" style="background-color:rgb(55, 0, 255)">
+            <button onclick="cancel()">C</button>
+            <br>
+            Result: <input type="text" name="txtres">
+            <br>        
+        </form>
+        <script type="text/javascript">
+            function sumValues()
+            {
+                var num1,num1, res;
+                num1=Number(document.calculator.txtnum1.value);
+                num2=Number(document.calculator.txtnum2.value);
+                res=num1+num2;
+                document=calculator.txtres.value=res;
+            }
+            function subtractValues()
+            {
+                var num1,num1, res;
+                num1=Number(document.calculator.txtnum1.value);
+                num2=Number(document.calculator.txtnum2.value);
+                res=num1-num2;
+                document=calculator.txtres.value=res;
+            }
+            function multiplyValues()
+            {
+                var num1,num1, res;
+                num1=Number(document.calculator.txtnum1.value);
+                num2=Number(document.calculator.txtnum2.value);
+                res=num1*num2;
+                document=calculator.txtres.value=res;
+            }
+            function divideValues()
+            {
+                var num1,num1, res;
+                num1=Number(document.calculator.txtnum1.value);
+                num2=Number(document.calculator.txtnum2.value);
+                res=num1/num2;
+                document=calculator.txtres.value=res;
+            }
+        </script>
+    </body>
